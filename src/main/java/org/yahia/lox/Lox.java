@@ -15,6 +15,7 @@ public class Lox {
     static boolean hadRuntimeError = false;
 
     public static void main(String[] args) throws IOException {
+        //args[0] = "C:\\Users\\yahia\\IdeaProjects\\jlox\\src\\main\\java\\org\\yahia\\lox\\TestLoxScript.txt";
         if (args.length > 1) {
             System.out.println("Usage: jlox [script]");
             System.exit(64);
