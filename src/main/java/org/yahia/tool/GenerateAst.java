@@ -15,12 +15,16 @@ public class GenerateAst {
 //            System.err.println("Usage: generate_ast <output directory>");
 //            System.exit(64);
 //        }
-        String outputDir = "/Users/knight/Desktop/Uni/Jlox/src/main/java/org/yahia/lox";
+        String outputDir = "C:\\Users\\yahia\\IdeaProjects\\jlox\\src\\main\\java\\org\\yahia\\lox";
         defineAst(outputDir, "Expr", Arrays.asList(
                 "Binary   : Expr left, Token operator, Expr right",
                 "Grouping : Expr expression",
                 "Literal  : Object value",
                 "Unary    : Token operator, Expr right"
+        ));
+        defineAst(outputDir, "Stmt", Arrays.asList(
+                "Expression : Expr expression",
+                "Print      : Expr expression"
         ));
     }
     private static void defineAst(
